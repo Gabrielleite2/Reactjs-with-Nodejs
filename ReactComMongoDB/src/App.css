@@ -1,0 +1,95 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(7deg, rgba(2,0,36,1) 15%, rgba(30,24,83,1) 53%, rgba(2,2,65,1) 77%);    
+
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-item {
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  /* color: #333; */
+  color: #f7f4f4;
+  position: relative;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-item.is-active {
+  color: #ffae00;
+}
+
+.nav-item:hover {
+  color: #ffae00;
+}
+
+.nav-indicator {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  /* background-color: #00ff40; */
+  /* transition: transform 0.9s ease, width 0.8s ease; */
+}
+
+.content {
+  padding-top: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  flex: 1; /* A logo ocupa o espaço à esquerda */
+}
+
+.logo img {
+  height: 50px; /* Ajuste o tamanho da logo conforme necessário */
+  width: auto;  /* Mantém a proporção da imagem */
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  flex: 2; /* Os itens de navegação ficam centralizados */
+}
+.bt-sair-header {
+  padding: 5px 10px; /* Menor padding para reduzir a largura e altura */
+  height: 30px; /* Defina uma altura fixa menor */
+  margin: 0 150px; /* Ajuste de margem */
+  text-decoration: none; /* Remove qualquer sublinhado */
+  color: #f7f4f4;
+  display: inline-flex; /* Para alinhar o conteúdo e controlar a altura */
+  align-items: center; /* Centraliza verticalmente o texto no botão */
+  transition: color 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+  background: #2C0A0A;  /* Cor de fundo padrão */
+  color: #FFF; /* Cor do texto padrão */
+  border: 2px solid #C0392B;  /* Cor da borda padrão */
+  /* background: linear-gradient(90deg, #ff5f6d, #ffc371); Gradiente de fundo */
+  /* border: none; */
+  border-radius: 8px; /*Bordas arredondadas */
+}
+
+/* Remover o foco laranja */
+.bt-sair-header:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.bt-sair-header:hover {
+  text-decoration: underline;
+  background: #8B0000; /* Alteração na cor do fundo ao passar o mouse */
+  color: #F5B041; /* Alteração da cor do texto ao passar o mouse */
+  border-color: #F5B041; /* Alteração da cor da borda ao passar o mouse */
+  text-decoration: none; /* Assegure que o sublinhado não aparece no hover */
+
+}
+

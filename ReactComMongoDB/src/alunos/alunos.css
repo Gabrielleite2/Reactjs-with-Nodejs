@@ -1,0 +1,178 @@
+.container {
+    color: #f8f6f6;
+    width: 500px;
+    margin: 50px auto; /* Centraliza horizontalmente e adiciona margem superior */
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgb(250, 250, 250);
+    text-align: center; /* Centraliza o texto e o conteúdo dentro da div */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #f8f7f7;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: left; /* Centraliza o conteúdo interno dos itens da lista */
+  }
+  
+  button {
+  
+
+    margin-top: 10px;
+    padding: 10px 20px; 
+    background-color: #2C0A0A;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+    display: inline-block; 
+  }
+  
+  button:hover {
+    background: #8B0000; /* Alteração na cor do fundo ao passar o mouse */
+    color: #F5B041; /* Alteração da cor do texto ao passar o mouse */
+    border-color: #F5B041; /* Alteração da cor da borda ao passar o mouse */
+  } 
+  
+  /* Centraliza os botões */
+  li button {
+    display: inline-block;
+    margin: 10px 0;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens da lista horizontalmente */
+  }
+/*   
+  li {
+    width: 100%; 
+  }
+   */
+
+
+
+/* Botão Congelar/Descongelar */
+.btn-congelar {
+  position: relative;
+  left: 10px;
+  width: 40%;
+  padding: 10px;
+  background: #16065a;  /* Cor de fundo padrão */
+  color: #FFF; /* Cor do texto padrão */
+  border: 2px solid #184597;  /* Cor da borda padrão */
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+/* Alterações ao passar o mouse (hover) */
+.btn-congelar:hover {
+  background: #130494; /* Alteração na cor do fundo ao passar o mouse */
+  color: #F5B041; /* Alteração da cor do texto ao passar o mouse */
+  border-color: #F5B041; /* Alteração da cor da borda ao passar o mouse */
+}
+
+/* Botão Gerenciar Treinos */
+.btn-gerenciar {
+  position: relative;
+  left: 50px;
+  width: 40%;
+  padding: 10px;
+  background: #16065a;  /* Cor de fundo padrão */
+  color: #FFF; /* Cor do texto padrão */
+  border: 2px solid #184597;  /* Cor da borda padrão */
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+
+/* Alterações ao passar o mouse (hover) */
+.btn-gerenciar:hover {
+  background: #130494; /* Alteração na cor do fundo ao passar o mouse */
+  color: #F5B041; /* Alteração da cor do texto ao passar o mouse */
+  border-color: #F5B041; /* Alteração da cor da borda ao passar o mouse */
+}
+
+/* Botão Excluir */
+.btn-excluir {
+  position: relative;
+  left: 10px;
+  width: 40%;
+  padding: 10px;
+  background: #2C0A0A;  /* Cor de fundo padrão */
+  color: #FFF; /* Cor do texto padrão */
+  border: 2px solid #C0392B;  /* Cor da borda padrão */
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+
+}
+
+/* Alterações ao passar o mouse (hover) */
+.btn-excluir:hover {
+  background: #8B0000; /* Alteração na cor do fundo ao passar o mouse */
+  color: #F5B041; /* Alteração da cor do texto ao passar o mouse */
+  border-color: #F5B041; /* Alteração da cor da borda ao passar o mouse */
+}
+
+/* Botão Editar */
+.btn-editar {
+  position: relative;
+  left: 50px;
+  width: 40%;
+  padding: 10px;
+  background: #053d03;  /* Cor de fundo padrão */
+  color: #FFF; /* Cor do texto padrão */
+  border: 2px solid #0ec736;  /* Cor da borda padrão */
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Alterações ao passar o mouse (hover) */
+.btn-editar:hover {
+  background: #065304; /* Alteração na cor do fundo ao passar o mouse */
+  color: #F5B041; /* Alteração da cor do texto ao passar o mouse */
+  border-color: #F5B041; /* Alteração da cor da borda ao passar o mouse */
+}
+
+.restore-btn{
+  position: relative;
+  left: 150px;
+  width: 50%;
+  height: 50%;
+  padding: 10px;
+  background: #16065a;  /* Cor de fundo padrão */
+  color: #FFF; /* Cor do texto padrão */
+  border: 2px solid #184597;  /* Cor da borda padrão */
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Alterações ao passar o mouse (hover) */
+.restore-btn:hover {
+  background: #130494; /* Alteração na cor do fundo ao passar o mouse */
+  color: #F5B041; /* Alteração da cor do texto ao passar o mouse */
+  border-color: #F5B041; /* Alteração da cor da borda ao passar o mouse */
+}

@@ -1,0 +1,99 @@
+/* Centraliza o container na tela */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: repeat-y;
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+
+  }
+  
+  body::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://png.pngtree.com/thumb_back/fw800/background/20230527/pngtree-dark-gym-with-equipments-image_2675066.jpg') no-repeat center center/cover;
+    filter: blur(3px); /* Ajuste o nível de desfoque aqui */
+    z-index: -1; /* Coloca a imagem embaçada atrás de outros conteúdos */
+}
+
+  .container {
+    color: #f8f6f6;
+    width: 500px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgb(250, 250, 250);
+    border-radius: 10px;
+    text-align: center; /* Centraliza o texto dentro da container */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #f8f6f6;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left; /* Mantém os labels alinhados à esquerda */
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #f8f7f7;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .btn-cadastrar {
+  position: relative;
+  left: 160px;
+  width: 40%;
+  padding: 10px;
+  background: #053d03;  /* Cor de fundo padrão */
+  color: #FFF; /* Cor do texto padrão */
+  border: 2px solid #0ec736;  /* Cor da borda padrão */
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  }
+  
+  /* Efeito ao passar o mouse (hover) */
+  .btn-cadastrar:hover {
+    background: #065304; /* Alteração na cor do fundo ao passar o mouse */
+    color: #F5B041; /* Alteração da cor do texto ao passar o mouse */
+    border-color: #F5B041; /* Alteração da cor da borda ao passar o mouse */
+  }
+  
+
+  .btn-cadastrar-promocao {
+    position: relative;
+    left: 160px;
+    width: 40%;
+    padding: 10px;
+    background: #053d03;  /* Cor de fundo padrão */
+    color: #FFF; /* Cor do texto padrão */
+    border: 2px solid #0ec736;  /* Cor da borda padrão */
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Efeito ao passar o mouse (hover) */
+  .btn-cadastrar-promocao:hover {
+    background: #065304; /* Alteração na cor do fundo ao passar o mouse */
+    color: #F5B041; /* Alteração da cor do texto ao passar o mouse */
+    border-color: #F5B041; /* Alteração da cor da borda ao passar o mouse */
+  }
+  
