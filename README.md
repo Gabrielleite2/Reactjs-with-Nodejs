@@ -3,7 +3,7 @@ Projeto feito em grupo para faculdade.
 
 Como iniciar seu projeto
 
-Para que o seu projeto funcione corretamente, você precisa iniciar tanto o backend quanto o frontend. Siga os passos abaixo:
+Para que o seu projeto funcione corretamente, você precisa iniciar tanto o backend quanto o frontend e você necessita tambem esta com o MongoDBcompass instalado na sua maquina e aberto. Siga os passos abaixo:
 
 Passo 1: Instalar Dependências
 Abra seu terminal.
