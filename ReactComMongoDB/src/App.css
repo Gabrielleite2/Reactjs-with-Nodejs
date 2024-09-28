@@ -93,3 +93,72 @@
 
 }
 
+
+/* Estilos para o Header */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Mantém os itens à esquerda e direita */
+  padding: 10px 20px;
+  background-color: #0b0d36;
+  color: white;
+}
+
+/* Estilos para os itens de navegação */
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Indicador da aba ativa */
+.nav-indicator {
+  height: 2px;
+  background-color: #ff9900;
+  position: absolute;
+  bottom: 0;
+  transition: transform 0.3s ease, width 0.3s ease;
+}
+
+/* Estilo para o avatar e o e-mail */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaçamento entre o avatar e o e-mail */
+}
+
+/* Avatar com borda circular */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* E-mail ao lado do avatar */
+.user-email {
+  font-size: 14px;
+  color: white;
+}
+
+/* Estilo do botão de logout */
+.bt-sair-header {
+  background-color: transparent;
+  border: 2px solid #ff5733;
+  color: #ff5733;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bt-sair-header:hover {
+  background-color: #ff5733;
+  color: white;
+}
+
+/* Ajuste para que o avatar, e-mail e botão fiquem no canto direito */
+.user-info {
+  margin-left: auto; /* Empurra o conteúdo para a direita */
+}

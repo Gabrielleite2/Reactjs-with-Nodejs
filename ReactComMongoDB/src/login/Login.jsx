@@ -15,9 +15,16 @@ const Login = () => {
       axios.post('http://localhost:8000/api/auth/login', { email, senha }) 
         .then(result => {
           console.log(result.data); 
+
           if (result.data.message === "Success") { 
-            alert('Login successful!');
-            navigate('/cadastrar'); 
+            const { token } = result.data; // Supondo que a resposta da API traga um 'token'
+            
+            // Armazenar o token e o email do usuário no localStorage
+            localStorage.setItem('authToken', token);
+            localStorage.setItem('userEmail', email); // Aqui você salva o e-mail do usuário
+            
+            alert('Login bem-sucedido!');
+            navigate('/cadastrar'); // Redireciona para a página de cadastro após o login
           } else {
             alert(result.data.message); 
           }
@@ -33,11 +40,11 @@ const Login = () => {
 
   return (
     <div className="login-container">
-    <div className="square">
+      <div className="square">
         <i style={{ '--clr': '#00f0ff' }}></i>
         <i style={{ '--clr': '#ff0057' }}></i>
         <i style={{ '--clr': '#fffd44' }}></i>
-    </div>
+      </div>
       <div className="login-form">
         <h1>Seja Bem-Vindo!</h1>
         <form onSubmit={handleSubmit}>
